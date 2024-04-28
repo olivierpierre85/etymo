@@ -1,10 +1,10 @@
 <template>
-  <div class="min-h-screen bg-gray-100">
+  <div class="min-h-screen">
     <header class="bg-white shadow-md p-4 fixed w-full top-0 left-0 z-10 flex justify-between items-center">
       <h1 class="text-xl font-bold">Etymo*</h1>
       <nav>
         <ul class="flex space-x-4">
-          <li><button @click="scrollToSection('multilinguism')">Welcome</button></li>
+          <li><button @click="scrollToSection('multilingualism')">Welcome</button></li>
           <li><button @click="scrollToSection('about')">About</button></li>
           <li><button @click="scrollToSection('contact')">Contact</button></li>
         </ul>
@@ -15,14 +15,14 @@
         <option value="es">Español</option>
       </select>
     </header>
-    <div class="pt-20">
-      <section id="multilinguism" class="my-8 p-4">
+    <div class="pt-20 bg-custom-blue">
+      <section id="multilingualism" class="my-8 p-4">
         <h2 class="text-2xl font-semibold">{{ t('multilingualism_title') }}</h2>
         <p>{{ t('multilingualism_content_1') }}</p>
         <p>{{ t('multilingualism_content_2') }}</p>
         <p>{{ t('multilingualism_content_3') }}</p>
       </section>
-      <section id="about" class="my-8 p-4 bg-blue">
+      <section id="about" class="my-8 p-4 bg-white">
         <h2 class="text-2xl font-semibold">About Us</h2>
         <p>Here's a little bit about our project or company.</p>
       </section>
