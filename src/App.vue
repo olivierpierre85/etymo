@@ -4,7 +4,7 @@
       <h1 class="text-xl font-bold">Etymo*</h1>
       <nav>
         <ul class="flex space-x-4">
-          <li><button @click="scrollToSection('welcome')">Welcome</button></li>
+          <li><button @click="scrollToSection('multilinguism')">Welcome</button></li>
           <li><button @click="scrollToSection('about')">About</button></li>
           <li><button @click="scrollToSection('contact')">Contact</button></li>
         </ul>
@@ -16,45 +16,18 @@
       </select>
     </header>
     <div class="pt-20">
-      <section id="welcome" class="my-8 p-4">
-        <h2 class="text-2xl font-semibold">Welcome to My Page</h2>
-        <p>This is a simple one-pager with a sticky header.</p>
+      <section id="multilinguism" class="my-8 p-4">
+        <h2 class="text-2xl font-semibold">{{ t('multilingualism_title') }}</h2>
+        <p>{{ t('multilingualism_content_1') }}</p>
+        <p>{{ t('multilingualism_content_2') }}</p>
+        <p>{{ t('multilingualism_content_3') }}</p>
       </section>
-      <section id="about" class="my-8 p-4">
+      <section id="about" class="my-8 p-4 bg-blue">
         <h2 class="text-2xl font-semibold">About Us</h2>
         <p>Here's a little bit about our project or company.</p>
       </section>
       <section id="contact" class="my-8 p-4">
         <h2 class="text-2xl font-semibold">Contact</h2>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
-        <p>{{ t('contact') }}</p>
         <p>{{ t('contact') }}</p>
       </section>
     </div>
