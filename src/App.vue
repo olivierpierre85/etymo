@@ -14,11 +14,12 @@
           <li><button @click="scrollToSection('multilingualism')" class="hover:underline">Welcome</button></li>
           <li><button @click="scrollToSection('about')" class="hover:underline">About</button></li>
           <li><button @click="scrollToSection('solutions')" class="hover:underline">Solutions</button></li>
+          <li><button @click="scrollToSection('contact')" class="hover:underline">Contact</button></li>
           <li>
             <select v-model="currentLanguage" class="hover:underline">
               <option value="en">English</option>
               <option value="fr">Français</option>
-              <option value="es">Español</option>
+              <option value="nl">Nederlands</option>
             </select>
           </li>
         </ul>
@@ -37,7 +38,7 @@
           </div>
         </div>
         <div class="flex-1 flex justify-center items-center mt-4 md:mt-0">
-          <img :src="image01" alt="Illustration of two people working at a desk" class="ml-4 max-w-full h-auto">
+          <img :src="image01" alt="Illustration of two people working at a desk" class="max-w-full h-auto">
         </div>
       </section>
       <section id="about" class="my-8 p-4 flex justify-center bg-white">
@@ -58,24 +59,49 @@
           </div>
         </div>
       </section>
-      <section id="solutions" class="my-8 p-4">
+      <section id="solutions" class="my-8 p-6">
         <div class="w-full md:w-3/4 mx-auto">
           <h2 class="text-4xl font-semibold pb-8 text-center">{{ t('solution_title_main') }}</h2>
-          <div class="flex flex-col md:flex-row justify-between">
-            <div class="flex-1 p-6">
-              <img :src="solutionImage1" alt="Solution 1" class="mb-4 max-w-full h-auto">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="flex-1 p-4 text-center">
+              <img :src="solutionImage1" alt="Solution 1" class="mb-4 max-w-full h-auto mx-auto">
               <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_1') }}</h3>
               <p>{{ t('solution_content_1') }}</p>
             </div>
-            <div class="flex-1 p-4">
-              <img :src="solutionImage2" alt="Solution 2" class="mb-4 max-w-full h-auto">
-              <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_3') }}</h3>
+            <div class="flex-1 p-4 text-center">
+              <img :src="solutionImage2" alt="Solution 2" class="mb-4 max-w-full h-auto mx-auto">
+              <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_2') }}</h3>
               <p>{{ t('solution_content_2') }}</p>
             </div>
-            <div class="flex-1 p-4">
-              <img :src="solutionImage3" alt="Solution 3" class="mb-4 max-w-full h-auto">
+            <div class="flex-1 p-4 text-center">
+              <img :src="solutionImage3" alt="Solution 3" class="mb-4 max-w-full h-auto mx-auto">
               <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_3') }}</h3>
               <p>{{ t('solution_content_3') }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact" class="my-8 p-6 bg-white">
+        <div class="w-full md:w-3/4 mx-auto text-center">
+          <h2 class="text-4xl font-semibold pb-8">{{ t('contact_title') }}</h2>
+          <div class="flex flex-col md:flex-row justify-around items-center">
+            <div class="flex-1 p-4">
+              <i class="fas fa-envelope fa-3x mb-2 text-custom-dark-blue"></i>
+              <!-- <h3 class="text-xl font-semibold mb-2">Email</h3> -->
+              <p>melissa.wauters@gmail.com</p>
+            </div>
+            <div class="flex-1 p-4">
+              <a href="https://be.linkedin.com/in/melissawauters">
+                <i class="fab fa-linkedin fa-3x mb-2 text-custom-dark-blue"></i>
+                <!-- <h3 class="text-xl font-semibold mb-2">LinkedIn</h3> -->
+                <p>https://be.linkedin.com/in/melissawauters</p>
+              </a>
+            </div>
+            <div class="flex-1 p-4">
+              <i class="fas fa-phone fa-3x mb-2 text-custom-dark-blue"></i>
+              <!-- <h3 class="text-xl font-semibold mb-2">Phone</h3> -->
+              <p>+32497 12 97 56</p>
             </div>
           </div>
         </div>
@@ -136,3 +162,6 @@ export default {
   }
 }
 </script>
+
+<!-- Add this link to your index.html or main HTML file -->
+
