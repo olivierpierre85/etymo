@@ -3,4 +3,5 @@
 - Contact form + email
 - Custom domain
 - Fourth service/solution
+- LOGO on website and shortcut 
 
