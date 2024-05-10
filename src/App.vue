@@ -19,12 +19,12 @@
     <div class="pt-20 bg-custom-blue">
       <section id="multilingualism" class="my-8 p-4 flex">
         <div class="flex-1">
-          <h2 class="text-4xl font-semibold">{{ t('multilingualism_title') }}</h2>
+          <h2 class="text-4xl font-semibold pb-4">{{ t('multilingualism_title') }}</h2>
           <p>{{ t('multilingualism_content_1') }}</p>
           <p>{{ t('multilingualism_content_2') }}</p>
           <p>{{ t('multilingualism_content_3') }}</p>
         </div>
-        <div class="flex-1">
+        <div class="flex-1 flex justify-center items-center">
           <img :src="image01" alt="Illustration of two people working at a desk" class="ml-4">
         </div>
       </section>
@@ -41,7 +41,9 @@
 </template>
 
 <style scoped>
-/* Additional styling can go here */
+p {
+  margin-bottom: 0.5rem;
+}
 </style>
 
 <script>
