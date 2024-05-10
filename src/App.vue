@@ -40,9 +40,23 @@
           <img :src="image01" alt="Illustration of two people working at a desk" class="ml-4 max-w-full h-auto">
         </div>
       </section>
-      <section id="about" class="my-8 p-4 bg-white">
-        <h2 class="text-2xl font-semibold">About Us</h2>
-        <p>Here's a little bit about our project or company.</p>
+      <section id="about" class="my-8 p-4 flex justify-center bg-white">
+        <div class="w-full md:w-3/4 p-4">
+          <h2 class="text-4xl font-semibold pb-8">{{ t('about_title') }}</h2>
+          <div class="text-xl">
+            <div class="text-xl">
+              <p class="no-margin">{{ t('about_content_1') }}</p>
+              <p class="big-margin">{{ t('about_content_2') }}</p>
+              <p class="no-margin">{{ t('about_content_3') }}</p>
+              <p class="big-margin">{{ t('about_content_4') }}</p>
+              <p class="no-margin">{{ t('about_content_5') }}</p>
+              <p class="big-margin">{{ t('about_content_6') }}</p>
+              <p class="no-margin">{{ t('about_content_7') }}</p>
+              <p class="big-margin">{{ t('about_content_8') }}</p>
+              <p>{{ t('about_content_9') }}</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="contact" class="my-8 p-4">
         <h2 class="text-2xl font-semibold">Contact</h2>
@@ -55,6 +69,12 @@
 <style scoped>
 p {
   margin-bottom: 0.75rem;
+}
+.no-margin {
+  margin-bottom: 0;
+}
+.big-margin {
+  margin-bottom: 1.5rem;
 }
 </style>
 
