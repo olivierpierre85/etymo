@@ -5,8 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'custom-blue': 'rgb(179, 229, 230)'
-      }
+        'custom-blue': 'rgb(179, 229, 230)',
+        'custom-dark-blue': '#339799'
+      },
+      fontFamily: {
+        urbanist: ['Urbanist', 'sans-serif'],
+      },
     }
   },
   variants: {

@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen">
-    <header class="bg-white shadow-md p-4 fixed w-full top-0 left-0 z-10 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Etymo*</h1>
+  <div class="min-h-screen font-urbanist">
+    <header class="bg-white shadow-md p-4 fixed w-full top-0 left-0 z-10 flex justify-between items-center font-bold">
+      <h1 class="text-3xl text-custom-dark-blue">Etymo*</h1>
       <nav>
         <ul class="flex space-x-4">
           <li><button @click="scrollToSection('multilingualism')">Welcome</button></li>
