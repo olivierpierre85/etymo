@@ -101,7 +101,7 @@
             <div class="flex-1 p-4">
               <i class="fas fa-phone fa-3x mb-2 text-custom-dark-blue"></i>
               <!-- <h3 class="text-xl font-semibold mb-2">Phone</h3> -->
-              <p>+32497 12 97 56</p>
+              <p>+32497 12 97 52</p>
             </div>
           </div>
         </div>
