@@ -13,7 +13,7 @@
         <ul :class="{'hidden': !menuOpen, 'flex': menuOpen, 'flex-col': menuOpen, 'space-y-4': menuOpen, 'absolute': menuOpen, 'bg-white': menuOpen, 'top-16': menuOpen, 'right-4': menuOpen, 'p-4': menuOpen, 'border': menuOpen, 'md:flex': true, 'md:space-x-4': true, 'md:space-y-0': true, 'md:flex-row': true, 'md:static': true}">
           <li><button @click="scrollToSection('multilingualism')" class="hover:underline">Welcome</button></li>
           <li><button @click="scrollToSection('about')" class="hover:underline">About</button></li>
-          <li><button @click="scrollToSection('contact')" class="hover:underline">Contact</button></li>
+          <li><button @click="scrollToSection('solutions')" class="hover:underline">Solutions</button></li>
           <li>
             <select v-model="currentLanguage" class="hover:underline">
               <option value="en">English</option>
@@ -58,9 +58,27 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="my-8 p-4">
-        <h2 class="text-2xl font-semibold">Contact</h2>
-        <p>{{ t('contact') }}</p>
+      <section id="solutions" class="my-8 p-4">
+        <div class="w-full md:w-3/4 mx-auto">
+          <h2 class="text-4xl font-semibold pb-8 text-center">{{ t('solution_title_main') }}</h2>
+          <div class="flex flex-col md:flex-row justify-between">
+            <div class="flex-1 p-6">
+              <img :src="solutionImage1" alt="Solution 1" class="mb-4 max-w-full h-auto">
+              <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_1') }}</h3>
+              <p>{{ t('solution_content_1') }}</p>
+            </div>
+            <div class="flex-1 p-4">
+              <img :src="solutionImage2" alt="Solution 2" class="mb-4 max-w-full h-auto">
+              <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_3') }}</h3>
+              <p>{{ t('solution_content_2') }}</p>
+            </div>
+            <div class="flex-1 p-4">
+              <img :src="solutionImage3" alt="Solution 3" class="mb-4 max-w-full h-auto">
+              <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_3') }}</h3>
+              <p>{{ t('solution_content_3') }}</p>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </div>
@@ -81,12 +99,18 @@ p {
 <script>
 import langData from './assets/languages';
 const image01 = require('@/assets/illustration-01.png');
+const solutionImage1 = require('@/assets/solution-01.png');
+const solutionImage2 = require('@/assets/solution-02.png');
+const solutionImage3 = require('@/assets/solution-03.png');
 
 export default {
   data() {
     return {
       currentLanguage: 'en',
       image01,
+      solutionImage1,
+      solutionImage2,
+      solutionImage3,
       menuOpen: false
     };
   },
