@@ -16,11 +16,16 @@
       </select>
     </header>
     <div class="pt-20 bg-custom-blue">
-      <section id="multilingualism" class="my-8 p-4">
-        <h2 class="text-2xl font-semibold">{{ t('multilingualism_title') }}</h2>
-        <p>{{ t('multilingualism_content_1') }}</p>
-        <p>{{ t('multilingualism_content_2') }}</p>
-        <p>{{ t('multilingualism_content_3') }}</p>
+      <section id="multilingualism" class="my-8 p-4 flex">
+        <div class="flex-1">
+          <h2 class="text-2xl font-semibold">{{ t('multilingualism_title') }}</h2>
+          <p>{{ t('multilingualism_content_1') }}</p>
+          <p>{{ t('multilingualism_content_2') }}</p>
+          <p>{{ t('multilingualism_content_3') }}</p>
+        </div>
+        <div class="flex-1">
+          <img :src="image01" alt="Illustration of two people working at a desk" class="ml-4">
+        </div>
       </section>
       <section id="about" class="my-8 p-4 bg-white">
         <h2 class="text-2xl font-semibold">About Us</h2>
@@ -40,11 +45,13 @@
 
 <script>
 import langData from './assets/languages';
+const image01 = require('@/assets/illustration-01.png');
 
 export default {
   data() {
     return {
-      currentLanguage: 'en'  // default language
+      currentLanguage: 'en',
+      image01
     };
   },
   methods: {
