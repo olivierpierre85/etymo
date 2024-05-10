@@ -131,8 +131,20 @@ const solutionImage3 = require('@/assets/solution-03.png');
 
 export default {
   data() {
+    const browserLanguage = navigator.language || navigator.userLanguage;
+    let initialLanguage;
+
+    // Mapping browser language to supported languages
+    if (browserLanguage.includes('fr')) {
+      initialLanguage = 'fr';
+    } else if (browserLanguage.includes('nl')) {
+      initialLanguage = 'nl';
+    } else {
+      initialLanguage = 'en';
+    }
+
     return {
-      currentLanguage: 'en',
+      currentLanguage: initialLanguage,
       image01,
       solutionImage1,
       solutionImage2,
@@ -164,4 +176,3 @@ export default {
 </script>
 
 <!-- Add this link to your index.html or main HTML file -->
-
