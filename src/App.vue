@@ -7,18 +7,19 @@
           <li><button @click="scrollToSection('multilingualism')">Welcome</button></li>
           <li><button @click="scrollToSection('about')">About</button></li>
           <li><button @click="scrollToSection('contact')">Contact</button></li>
+          <li>      
+            <select v-model="currentLanguage">
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+            </select></li>
         </ul>
       </nav>
-      <select v-model="currentLanguage">
-        <option value="en">English</option>
-        <option value="fr">Français</option>
-        <option value="es">Español</option>
-      </select>
     </header>
     <div class="pt-20 bg-custom-blue">
       <section id="multilingualism" class="my-8 p-4 flex">
         <div class="flex-1">
-          <h2 class="text-2xl font-semibold">{{ t('multilingualism_title') }}</h2>
+          <h2 class="text-4xl font-semibold">{{ t('multilingualism_title') }}</h2>
           <p>{{ t('multilingualism_content_1') }}</p>
           <p>{{ t('multilingualism_content_2') }}</p>
           <p>{{ t('multilingualism_content_3') }}</p>
