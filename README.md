@@ -1,6 +1,4 @@
 # TODO
 - Stock photos same as first
-- Contact form + email
-- TRanslations
-- LOGO
+- LOGO on website and shortcut 
 
