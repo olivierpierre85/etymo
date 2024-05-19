@@ -31,9 +31,7 @@
           <div class="w-full md:w-3/4 p-4">
             <h2 class="text-4xl font-semibold pb-8">{{ t('multilingualism_title') }}</h2>
             <div class="text-xl">
-              <p>{{ t('multilingualism_content_1') }}</p>
-              <p>{{ t('multilingualism_content_2') }}</p>
-              <p>{{ t('multilingualism_content_3') }}</p>
+              <div v-html="t('multilingualism_content')"></div>
             </div>
           </div>
         </div>
@@ -44,39 +42,34 @@
       <section id="about" class="my-8 p-4 flex justify-center bg-white">
         <div class="w-full md:w-3/4 p-4">
           <h2 class="text-4xl font-semibold pb-8">{{ t('about_title') }}</h2>
-          <div class="text-xl">
             <div class="text-xl">
-              <p class="no-margin">{{ t('about_content_1') }}</p>
-              <p class="big-margin">{{ t('about_content_2') }}</p>
-              <p class="no-margin">{{ t('about_content_3') }}</p>
-              <p class="big-margin">{{ t('about_content_4') }}</p>
-              <p class="no-margin">{{ t('about_content_5') }}</p>
-              <p class="big-margin">{{ t('about_content_6') }}</p>
-              <p class="no-margin">{{ t('about_content_7') }}</p>
-              <p class="big-margin">{{ t('about_content_8') }}</p>
-              <p>{{ t('about_content_9') }}</p>
+              <div v-html="t('about_content')"></div>
             </div>
           </div>
-        </div>
       </section>
       <section id="solutions" class="my-8 p-6">
         <div class="w-full md:w-3/4 mx-auto">
           <h2 class="text-4xl font-semibold pb-8 text-center">{{ t('solution_title_main') }}</h2>
-          <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="flex-1 p-4 text-center">
+          <div class="flex flex-wrap justify-center">
+            <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-center">
               <img :src="solutionImage1" alt="Solution 1" class="mb-4 max-w-full h-auto mx-auto">
               <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_1') }}</h3>
-              <p>{{ t('solution_content_1') }}</p>
+              <div v-html="t('solution_content_1')"></div>
             </div>
-            <div class="flex-1 p-4 text-center">
+            <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-center">
               <img :src="solutionImage2" alt="Solution 2" class="mb-4 max-w-full h-auto mx-auto">
               <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_2') }}</h3>
-              <p>{{ t('solution_content_2') }}</p>
+              <div v-html="t('solution_content_2')"></div>
             </div>
-            <div class="flex-1 p-4 text-center">
+            <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-center">
               <img :src="solutionImage3" alt="Solution 3" class="mb-4 max-w-full h-auto mx-auto">
               <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_3') }}</h3>
-              <p>{{ t('solution_content_3') }}</p>
+              <div v-html="t('solution_content_3')"></div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-center">
+              <img :src="solutionImage4" alt="Solution 4" class="mb-4 max-w-full h-auto mx-auto">
+              <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_4') }}</h3>
+              <div v-html="t('solution_content_4')"></div>
             </div>
           </div>
         </div>
@@ -110,15 +103,9 @@
   </div>
 </template>
 
-<style scoped>
-p {
-  margin-bottom: 0.75rem;
-}
-.no-margin {
-  margin-bottom: 0;
-}
-.big-margin {
-  margin-bottom: 1.5rem;
+<style>
+section p {
+  margin-bottom: 1.00rem;
 }
 </style>
 
@@ -128,6 +115,7 @@ const image01 = require('@/assets/illustration-01.png');
 const solutionImage1 = require('@/assets/solution-01.png');
 const solutionImage2 = require('@/assets/solution-02.png');
 const solutionImage3 = require('@/assets/solution-03.png');
+const solutionImage4 = require('@/assets/solution-04.png');
 
 export default {
   data() {
@@ -149,6 +137,7 @@ export default {
       solutionImage1,
       solutionImage2,
       solutionImage3,
+      solutionImage4,
       menuOpen: false
     };
   },
@@ -174,5 +163,3 @@ export default {
   }
 }
 </script>
-
-<!-- Add this link to your index.html or main HTML file -->

@@ -1,19 +1,32 @@
 export default {
   en: {
     multilingualism_title: "Multilingualism made easy",
-    multilingualism_content_1: "Are your multilingual teams struggling to communicate effectively?",
-    multilingualism_content_2: "At Etymo*, we help bridge the gap with tailored consulting tracks, customized workshops and engaging language coaching.",
-    multilingualism_content_3: "Boost collaboration, empower your coworkers, and create a truly unified multilingual workplace.",
+    multilingualism_content: "<p>Are your multilingual teams struggling to communicate effectively?</p><p>At Etymo*, we help bridge the gap with tailored consulting tracks, customized workshops and engaging language coaching.</p><p>Boost collaboration, empower your coworkers, and create a truly unified multilingual workplace.</p>",
     about_title: "About Etymo*",
-    about_content_1: "So, you've invested in language training for your coworkers, but you still feel they don't really use their second language at work.",
-    about_content_2: "Or you've been learning a second language for a while, but you never get the chance to speak it at the office - despite having native speakers as colleagues.",
-    about_content_3: "Sound familiar?",
-    about_content_4: "Welcome to Etymo*.",
-    about_content_5: "My name is Melissa, and I've been a corporate language trainer (EN/NL/FR) since 2017.",
-    about_content_6: "In that time, I've found that language learners rarely practice their second language at work if they don't feel empowered to do so - which can be quite an obstacle in multilingual teams.",
-    about_content_7: "How can you empower your multilingual teams to communicate better?",
-    about_content_8: "How can multilingualism become an asset and not an obstacle?",
-    about_content_9: "Let Etymo* help you find out.",
+    about_content: `
+      <p>
+        So, you've invested in language training for your coworkers, but you still feel they don't really use their second language at work.
+        <br>
+        Or you've been learning a second language for a while, but you never get the chance to speak it at the office - despite having native speakers as colleagues.
+      </p>
+      <p>
+        Sound familiar?
+        <br>
+        Welcome to Etymo*.
+      </p>
+      <p>
+        My name is Melissa, and I've been a corporate language trainer (EN/NL/FR) since 2017.
+        <br>
+        In that time, I've found that language learners rarely practice their second language at work if they don't feel empowered to do so - which can be quite an obstacle in multilingual teams.
+      </p>
+      <p>
+        How can you empower your multilingual teams to communicate better?
+        <br>
+        How can multilingualism become an asset and not an obstacle?
+      </p>
+      <p>
+        Let Etymo* help you find out.
+      </p>`,
     solution_title_main: "Solutions",
     solution_title_1: "Multilingualism Consulting & Coaching",
     solution_content_1: "Bespoke consulting & coaching tracks to help your multilingual teams work better together.",
@@ -21,55 +34,15 @@ export default {
     solution_content_2: "Customized trilingual workshops in Dutch, French and English to improve communication and cohesion within multilingual teams. ",
     solution_title_3: "Language Training",
     solution_content_3: "Dutch, French and English language training, for individual learners or small groups. Always closely tailored to your learners' and your organization's needs.",
+    solution_title_4: "Language Training",
+    solution_content_4: "Dutch, French and English language training, for individual learners or small groups. Always closely tailored to your learners' and your organization's needs.",
     contact_title: "Get in touch via email or phone."
   },
   fr: {
-    multilingualism_title: "Le multilinguisme simplifié",
-    multilingualism_content_1: "Vos équipes multilingues ont-elles du mal à communiquer efficacement?",
-    multilingualism_content_2: "Chez Etymo*, nous aidons à combler le fossé avec des parcours de conseil sur mesure, des ateliers personnalisés et un coaching linguistique engageant.",
-    multilingualism_content_3: "Améliorez la collaboration, responsabilisez vos collègues et créez un véritable lieu de travail multilingue unifié.",
-    about_title: "À propos d'Etymo*",
-    about_content_1: "Alors, vous avez investi dans la formation linguistique pour vos collègues, mais vous avez toujours l'impression qu'ils n'utilisent pas vraiment leur deuxième langue au travail.",
-    about_content_2: "Ou vous apprenez une deuxième langue depuis un certain temps, mais vous n'avez jamais l'occasion de la parler au bureau - malgré la présence de collègues natifs.",
-    about_content_3: "Ça vous semble familier?",
-    about_content_4: "Bienvenue chez Etymo*.",
-    about_content_5: "Je m'appelle Melissa, et je suis formatrice en langues d'entreprise (EN/NL/FR) depuis 2017.",
-    about_content_6: "Pendant ce temps, j'ai constaté que les apprenants en langues pratiquent rarement leur deuxième langue au travail s'ils ne se sentent pas habilités à le faire - ce qui peut être un obstacle important dans les équipes multilingues.",
-    about_content_7: "Comment pouvez-vous permettre à vos équipes multilingues de mieux communiquer?",
-    about_content_8: "Comment le multilinguisme peut-il devenir un atout et non un obstacle?",
-    about_content_9: "Laissez Etymo* vous aider à le découvrir.",
-    solution_title_main: "Solutions",
-    solution_title_1: "Consultation et Coaching en Multilinguisme",
-    solution_content_1: "Parcours de consultation et de coaching sur mesure pour aider vos équipes multilingues à mieux travailler ensemble.",
-    solution_title_2: "Ateliers",
-    solution_content_2: "Ateliers trilingues personnalisés en néerlandais, français et anglais pour améliorer la communication et la cohésion au sein des équipes multilingues.",
-    solution_title_3: "Formation Linguistique",
-    solution_content_3: "Formation linguistique en néerlandais, français et anglais, pour les apprenants individuels ou les petits groupes. Toujours étroitement adaptée aux besoins de vos apprenants et de votre organisation.",
-    contact_title: "Contactez-nous par email ou par téléphone."
+    //TODO add french translation
   },
   nl: {
-    multilingualism_title: "Meertaligheid eenvoudig gemaakt",
-    multilingualism_content_1: "Hebben uw meertalige teams moeite om effectief te communiceren?",
-    multilingualism_content_2: "Bij Etymo* overbruggen we de kloof met op maat gemaakte adviestrajecten, aangepaste workshops en boeiende taalcoaching.",
-    multilingualism_content_3: "Verhoog de samenwerking, geef uw collega's meer macht en creëer een werkelijk verenigde meertalige werkplek.",
-    about_title: "Over Etymo*",
-    about_content_1: "Dus, u heeft geïnvesteerd in taaltraining voor uw collega's, maar u heeft nog steeds het gevoel dat ze hun tweede taal niet echt gebruiken op het werk.",
-    about_content_2: "Of u leert al een tijdje een tweede taal, maar u krijgt nooit de kans om het op kantoor te spreken - ondanks dat u collega's heeft die moedertaalsprekers zijn.",
-    about_content_3: "Komt dat u bekend voor?",
-    about_content_4: "Welkom bij Etymo*.",
-    about_content_5: "Mijn naam is Melissa en ik ben sinds 2017 een bedrijfs taaldocent (EN/NL/FR).",
-    about_content_6: "In die tijd heb ik gemerkt dat taalleerders hun tweede taal zelden op het werk oefenen als ze zich niet bevoegd voelen om dit te doen - wat een groot obstakel kan zijn in meertalige teams.",
-    about_content_7: "Hoe kunt u uw meertalige teams in staat stellen beter te communiceren?",
-    about_content_8: "Hoe kan meertaligheid een troef worden en geen obstakel?",
-    about_content_9: "Laat Etymo* u helpen dit te ontdekken.",
-    solution_title_main: "Oplossingen",
-    solution_title_1: "Consultancy & Coaching Meertaligheid",
-    solution_content_1: "Op maat gemaakte consultancy- en coachingtrajecten om uw meertalige teams beter te laten samenwerken.",
-    solution_title_2: "Workshops",
-    solution_content_2: "Aangepaste drietalige workshops in Nederlands, Frans en Engels om communicatie en cohesie binnen meertalige teams te verbeteren.",
-    solution_title_3: "Taaltraining",
-    solution_content_3: "Taaltraining in Nederlands, Frans en Engels, voor individuele leerlingen of kleine groepen. Altijd nauw afgestemd op de behoeften van uw leerlingen en uw organisatie.",
-    contact_title: "Neem contact op via e-mail of telefoon."
+    //TODO add dutch translation
   }
 };
 
