@@ -97,6 +97,25 @@
               <p>+32497 12 97 52</p>
             </div>
           </div>
+          <div class="w-full md:w-2/3 mx-auto mt-8">
+            <form @submit.prevent="sendEmail" class="bg-gray-100 p-6 rounded-lg shadow-lg">
+              <div class="mb-4">
+                <label for="name" class="block text-left text-sm font-medium text-gray-700">Name</label>
+                <input type="text" id="name" v-model="form.name" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required>
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-left text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" v-model="form.email" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required>
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-left text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" v-model="form.message" rows="4" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required></textarea>
+              </div>
+              <div>
+                <button type="submit" class="bg-custom-dark-blue text-white py-2 px-4 rounded-md hover:bg-blue-700">Send</button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </div>
@@ -110,6 +129,7 @@ section p {
 </style>
 
 <script>
+import emailjs from 'emailjs-com';
 import langData from './assets/languages';
 const image01 = require('@/assets/illustration-01.png');
 const solutionImage1 = require('@/assets/solution-01.png');
@@ -138,7 +158,12 @@ export default {
       solutionImage2,
       solutionImage3,
       solutionImage4,
-      menuOpen: false
+      menuOpen: false,
+      form: {
+        name: '',
+        email: '',
+        message: ''
+      }
     };
   },
   methods: {
@@ -159,6 +184,25 @@ export default {
     },
     toggleMenu() {
       this.menuOpen = !this.menuOpen;
+    },
+    sendEmail() {
+      const serviceID = 'service_44ffhav';
+      const templateID = 'template_05bd9p7';
+      const publicKey = 'YP4w96vAyA5FfnENy';
+      
+      emailjs.send(serviceID, templateID, this.form, publicKey)
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          alert('Email sent successfully!');
+          this.form.name = '';
+          this.form.email = '';
+          this.form.message = '';
+        }, (error) => {
+          console.log('FAILED...', error);
+          alert('Failed to send email. Please try again later.');
+        });
+
+
     }
   }
 }
