@@ -1,7 +1,10 @@
 <template>
   <div class="min-h-screen font-urbanist">
     <header class="bg-white shadow-md p-4 fixed w-full top-0 left-0 z-10 flex justify-between items-center font-bold">
-      <h1 class="text-3xl text-custom-dark-blue">Etymo*</h1>
+      <div class="flex items-end">
+        <!-- <img :src="logo" alt="logo" class="max-w-full h-auto mr-2"> -->
+        <h1 class="text-4xl text-custom-dark-blue">Etymo*</h1>
+      </div>
       <nav>
         <div class="md:hidden">
           <button @click="toggleMenu" class="text-custom-dark-blue focus:outline-none">
@@ -100,19 +103,19 @@
           <div class="w-full md:w-2/3 mx-auto mt-8">
             <form @submit.prevent="sendEmail" class="bg-gray-100 p-6 rounded-lg shadow-lg">
               <div class="mb-4">
-                <label for="name" class="block text-left text-sm font-medium text-gray-700">Name</label>
+                <label for="name" class="block text-left text-sm font-medium text-gray-700">{{ t('contact_name') }}</label>
                 <input type="text" id="name" v-model="form.name" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required>
               </div>
               <div class="mb-4">
-                <label for="email" class="block text-left text-sm font-medium text-gray-700">Email</label>
+                <label for="email" class="block text-left text-sm font-medium text-gray-700">{{ t('contact_email') }}</label>
                 <input type="email" id="email" v-model="form.email" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required>
               </div>
               <div class="mb-4">
-                <label for="message" class="block text-left text-sm font-medium text-gray-700">Message</label>
+                <label for="message" class="block text-left text-sm font-medium text-gray-700">{{ t('contact_message') }}</label>
                 <textarea id="message" v-model="form.message" rows="4" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required></textarea>
               </div>
               <div>
-                <button type="submit" class="bg-custom-dark-blue text-white py-2 px-4 rounded-md hover:bg-blue-700">Send</button>
+                <button type="submit" class="bg-custom-dark-blue text-white py-2 px-4 rounded-md hover:bg-blue-700">{{ t('contact_send') }}</button>
               </div>
             </form>
           </div>
@@ -131,6 +134,7 @@ section p {
 <script>
 import emailjs from 'emailjs-com';
 import langData from './assets/languages';
+const logo = require('@/assets/logo.png');
 const image01 = require('@/assets/illustration-01.png');
 const solutionImage1 = require('@/assets/solution-01.png');
 const solutionImage2 = require('@/assets/solution-02.png');
@@ -153,6 +157,7 @@ export default {
 
     return {
       currentLanguage: initialLanguage,
+      logo,
       image01,
       solutionImage1,
       solutionImage2,

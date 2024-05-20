@@ -1,4 +1,3 @@
 # TODO
-- Stock photos same as first
-- LOGO on website and shortcut 
+- Stock photos and Melissa's head
 

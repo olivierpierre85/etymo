@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       colors: {
         'custom-blue': 'rgb(179, 229, 230)',
-        'custom-dark-blue': '#339799'
+        'custom-dark-blue': '#126d6d'
       },
       fontFamily: {
         urbanist: ['Urbanist', 'sans-serif'],
