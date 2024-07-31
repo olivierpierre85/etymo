@@ -39,7 +39,7 @@
           </div>
         </div>
         <div class="flex-1 flex justify-center items-center mt-4 md:mt-0">
-          <img :src="image01" alt="Illustration of two people working at a desk" class="max-w-full h-auto">
+          <img :src="image01" alt="Illustration of two people working at a desk" class="max-w-full h-auto rounded-[30px]">
         </div>
       </section>
       <section id="about" class="my-8 p-4 flex justify-center bg-white">
@@ -55,22 +55,22 @@
           <h2 class="text-4xl font-semibold pb-8 text-center">{{ t('solution_title_main') }}</h2>
           <div class="flex flex-wrap justify-center">
             <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-center">
-              <img :src="solutionImage1" alt="Solution 1" class="mb-4 max-w-full h-auto mx-auto">
+              <img :src="solutionImage1" alt="Two women talking" class="mb-4 max-w-full h-auto mx-auto rounded-[20px]">
               <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_1') }}</h3>
               <div v-html="t('solution_content_1')"></div>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-center">
-              <img :src="solutionImage2" alt="Solution 2" class="mb-4 max-w-full h-auto mx-auto">
+              <img :src="solutionImage2" alt="Persons holding sticky notes" class="mb-4 max-w-full h-auto mx-auto rounded-[20px]">
               <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_2') }}</h3>
               <div v-html="t('solution_content_2')"></div>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-center">
-              <img :src="solutionImage3" alt="Solution 3" class="mb-4 max-w-full h-auto mx-auto">
+              <img :src="solutionImage3" alt="Learn word spelled with scrabble letters" class="mb-4 max-w-full h-auto mx-auto rounded-[20px]">
               <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_3') }}</h3>
               <div v-html="t('solution_content_3')"></div>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-center">
-              <img :src="solutionImage4" alt="Solution 4" class="mb-4 max-w-full h-auto mx-auto">
+              <img :src="solutionImage4" alt="Person writing on wooden table" class="mb-4 max-w-full h-auto mx-auto rounded-[20px]">
               <h3 class="text-xl font-semibold mb-2">{{ t('solution_title_4') }}</h3>
               <div v-html="t('solution_content_4')"></div>
             </div>
@@ -135,11 +135,11 @@ section p {
 import emailjs from 'emailjs-com';
 import langData from './assets/languages';
 const logo = require('@/assets/logo.png');
-const image01 = require('@/assets/portrait.jpg');
-const solutionImage1 = require('@/assets/solution-01.png');
-const solutionImage2 = require('@/assets/solution-02.png');
-const solutionImage3 = require('@/assets/solution-03.png');
-const solutionImage4 = require('@/assets/solution-04.png');
+const image01 = require('@/assets/portrait_melissa.jpg');
+const solutionImage1 = require('@/assets/solution-01.webp');
+const solutionImage2 = require('@/assets/solution-02.webp');
+const solutionImage3 = require('@/assets/solution-03.webp');
+const solutionImage4 = require('@/assets/solution-04.webp');
 
 export default {
   data() {
