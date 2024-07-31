@@ -14,10 +14,10 @@
           </button>
         </div>
         <ul :class="{'hidden': !menuOpen, 'flex': menuOpen, 'flex-col': menuOpen, 'space-y-4': menuOpen, 'absolute': menuOpen, 'bg-white': menuOpen, 'top-16': menuOpen, 'right-4': menuOpen, 'p-4': menuOpen, 'border': menuOpen, 'md:flex': true, 'md:space-x-4': true, 'md:space-y-0': true, 'md:flex-row': true, 'md:static': true}">
-          <li><button @click="scrollToSection('multilingualism')" class="hover:underline">Welcome</button></li>
-          <li><button @click="scrollToSection('about')" class="hover:underline">About</button></li>
-          <li><button @click="scrollToSection('solutions')" class="hover:underline">Solutions</button></li>
-          <li><button @click="scrollToSection('contact')" class="hover:underline">Contact</button></li>
+          <li><button @click="scrollToSection('multilingualism')" class="hover:underline">{{ t('menu_multilingualism') }}</button></li>
+          <li><button @click="scrollToSection('about')" class="hover:underline">{{ t('menu_about') }}</button></li>
+          <li><button @click="scrollToSection('solutions')" class="hover:underline">{{ t('menu_solutions') }}</button></li>
+          <li><button @click="scrollToSection('contact')" class="hover:underline">{{ t('menu_contact') }}</button></li>
           <li>
             <select v-model="currentLanguage" class="hover:underline">
               <option value="en">English</option>
@@ -85,7 +85,7 @@
             <div class="flex-1 p-4">
               <i class="fas fa-envelope fa-3x mb-2 text-custom-dark-blue"></i>
               <!-- <h3 class="text-xl font-semibold mb-2">Email</h3> -->
-              <p>melissa.wauters@gmail.com</p>
+              <p>melissa@etymo.be</p>
             </div>
             <div class="flex-1 p-4">
               <a href="https://be.linkedin.com/in/melissawauters">
@@ -97,7 +97,7 @@
             <div class="flex-1 p-4">
               <i class="fas fa-phone fa-3x mb-2 text-custom-dark-blue"></i>
               <!-- <h3 class="text-xl font-semibold mb-2">Phone</h3> -->
-              <p>+32497 12 97 52</p>
+              <p>+32 497 12 97 52</p>
             </div>
           </div>
           <div class="w-full md:w-2/3 mx-auto mt-8">
@@ -135,7 +135,7 @@ section p {
 import emailjs from 'emailjs-com';
 import langData from './assets/languages';
 const logo = require('@/assets/logo.png');
-const image01 = require('@/assets/illustration-01.png');
+const image01 = require('@/assets/portrait.jpg');
 const solutionImage1 = require('@/assets/solution-01.png');
 const solutionImage2 = require('@/assets/solution-02.png');
 const solutionImage3 = require('@/assets/solution-03.png');

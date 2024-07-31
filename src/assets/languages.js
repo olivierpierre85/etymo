@@ -1,12 +1,16 @@
 export default {
   en: {
+    menu_multilingualism: "Welcome",
+    menu_about: "About",
+    menu_solutions: "Solutions",
+    menu_contact: "Contact",
     multilingualism_title: "Multilingualism made easy",
     multilingualism_content: `
       <p>
         Are your multilingual teams struggling to communicate effectively?
       </p>
       <p>
-        At Etymo*, we help bridge the gap with tailored consulting tracks, customized workshops and engaging language coaching.
+        At Etymo*, we help bridge the gap with tailored <b>consulting tracks</b>, customized <b>workshops</b> and engaging <b>language coaching</b> and bespoke <b>writing services</b>.
       </p>
       <p>
       Boost collaboration, empower your coworkers, and create a truly unified multilingual workplace.
@@ -43,15 +47,19 @@ export default {
     solution_content_2: "Customized trilingual workshops in Dutch, French and English to improve communication and cohesion within multilingual teams. ",
     solution_title_3: "Language Training",
     solution_content_3: "Dutch, French and English language training, for individual learners or small groups. Always closely tailored to your learners' and your organization's needs.",
-    solution_title_4: "Language Training",
-    solution_content_4: "Dutch, French and English language training, for individual learners or small groups. Always closely tailored to your learners' and your organization's needs.",
-    contact_title: "Get in touch via email or phone.",
+    solution_title_4: "Writing Services",
+    solution_content_4: "Proofreading, editing and ghostwriting. For all your content in Dutch, French and English. ",
+    contact_title: "Get in Touch",
     contact_name: "Name",
     contact_email: "Email",
     contact_message: "Message",
     contact_send: "Send",
   },
   fr: {
+    menu_multilingualism: "Bienvenue",
+    menu_about: "À propos",
+    menu_solutions: "Solutions",
+    menu_contact: "Contact",
     multilingualism_title: "Le multilinguisme simplifié",
     multilingualism_content: `
       <p>
@@ -104,6 +112,10 @@ export default {
     contact_send: "Envoyer",
   },
   nl: {
+    menu_multilingualism: "Welkom",
+    menu_about: "Over Etymo*",
+    menu_solutions: "Oplossingen",
+    menu_contact: "Contact",
     multilingualism_title: "Meertaligheid eenvoudig gemaakt",
     multilingualism_content: `
       <p>
