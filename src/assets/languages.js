@@ -71,7 +71,7 @@ export default {
       <p>
         Renforcez la collaboration, valorisez vos équipes et créez un environnement de travail véritablement unifié et multilingue.
       </p>`,
-    about_title: "Etymo* ? Kesako ?",
+    about_title: "À propos d'Etymo*",
     about_content: `
       <p>
         Vous avez investi dans la formation linguistique de vos collaborateurs, mais vous avez l'impression qu'ils n'utilisent pas vraiment leur deuxième langue au travail. 
