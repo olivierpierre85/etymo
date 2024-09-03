@@ -10,7 +10,7 @@ export default {
         Are your multilingual teams struggling to communicate effectively?
       </p>
       <p>
-        At Etymo*, we help bridge the gap with tailored <b>consulting tracks</b>, customized <b>workshops</b> and engaging <b>language coaching</b> and bespoke <b>writing services</b>.
+        At Etymo*, we help bridge the gap with tailored <b>consulting tracks</b>, customized <b>workshops</b>, engaging <b>language coaching</b> and bespoke <b>writing services</b>.
       </p>
       <p>
       Boost collaboration, empower your coworkers, and create a truly unified multilingual workplace.
