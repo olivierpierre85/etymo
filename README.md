@@ -1,3 +1,2 @@
-# TODO
-- Stock photos and Melissa's head
+www.etymo.be
 
